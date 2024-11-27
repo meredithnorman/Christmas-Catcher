@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokemon Catcher</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Press+Start+2P"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.14.1/themes/smoothness/jquery-ui.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title" draggable="false">Pokémon Catcher!</h1>
+    <div class="button-container" draggable="false">
+      <button>START</button>
+    </div>
+    <div class="game-container" draggable="false">
+      <div class="left-panel" draggable="false">
+        <div class="info-row" draggable="false">
+          <h2 id="timer-title" draggable="false">TIME:</h2>
+          <h2 id="timer-num" draggable="false">10 s</h2>
+        </div>
+        <div class="info-row" draggable="false">
+          <h2 id="score-title" draggable="false">CAPTURED:</h2>
+          <h2 id="score-num" draggable="false">0</h2>
+        </div>
+      </div>
+      <div class="middle-panel" draggable="false">
+        <div class="grid-container" draggable="false">
+          <div id="A1" class="cell top-left" draggable="false"></div>
+          <div id="A2" class="cell" draggable="false"></div>
+          <div id="A3" class="cell" draggable="false"></div>
+          <div id="A4" class="cell" draggable="false"></div>
+          <div id="A5" class="cell" draggable="false"></div>
+          <div id="A6" class="cell top-right" draggable="false"></div>
+          <div id="B1" class="cell" draggable="false"></div>
+          <div id="B2" class="cell" draggable="false"></div>
+          <div id="B3" class="cell" draggable="false"></div>
+          <div id="B4" class="cell" draggable="false"></div>
+          <div id="B5" class="cell" draggable="false"></div>
+          <div id="B6" class="cell" draggable="false"></div>
+          <div id="C1" class="cell" draggable="false"></div>
+          <div id="C2" class="cell" draggable="false"></div>
+          <div id="C3" class="cell" draggable="false"></div>
+          <div id="C4" class="cell" draggable="false"></div>
+          <div id="C5" class="cell" draggable="false"></div>
+          <div id="C6" class="cell" draggable="false"></div>
+          <div id="D1" class="cell" draggable="false"></div>
+          <div id="D2" class="cell" draggable="false"></div>
+          <div id="D3" class="cell" draggable="false"></div>
+          <div id="D4" class="cell" draggable="false"></div>
+          <div id="D5" class="cell" draggable="false"></div>
+          <div id="D6" class="cell" draggable="false"></div>
+          <div id="E1" class="cell bottom-left" draggable="false"></div>
+          <div id="E2" class="cell" draggable="false"></div>
+          <div id="E3" class="cell" draggable="false"></div>
+          <div id="E4" class="cell" draggable="false"></div>
+          <div id="E5" class="cell" draggable="false"></div>
+          <div id="E6" class="cell bottom-right" draggable="false"></div>
+        </div>
+      </div>
+      <div class="right-panel" draggable="false">
+        <h2 id="explanation" draggable="false">
+          Catch as many Pokémon as you can by clicking on them before the time's
+          up!
+        </h2>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.14.1/jquery-ui.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
