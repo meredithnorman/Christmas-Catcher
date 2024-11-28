@@ -84,7 +84,7 @@ function animatePokeball(cell) {
   pokeballSound.play();
   setTimeout(function () {
     $("#" + cell).prepend(
-      "<img src='./images/pokeball.png' height=50 width=50  draggable='false' />"
+      "<img src='./images/pokeball.png' height=50 width=50 draggable='false' style='z-index: 22; object-fit: scale-down;' />"
     );
     $("#" + cell + " img")
       .fadeIn(50)
