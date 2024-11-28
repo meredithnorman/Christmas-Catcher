@@ -3,7 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pokemon Catcher</title>
+    <title>Pokemon Catcher!</title>
+    <style>
+      body {
+        background-image: url("./images/grass.jpg");
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
     <link
       href="https://fonts.googleapis.com/css?family=Press+Start+2P"
       rel="stylesheet"
@@ -17,23 +27,14 @@
       href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.14.1/themes/smoothness/jquery-ui.css"
     />
     <link rel="stylesheet" href="styles.css" />
-    <style>
-      body {
-        background-image: url("./images/grass.jpg");
-        background-attachment: fixed;
-        background-repeat: no-repeat;
-        background-size: cover;
-        margin: 0;
-        padding: 0;
-      }
-    </style>
+    <link rel="shortcut icon" href="./images/pokeball.png" />
   </head>
   <body>
     <h1 id="title" draggable="false" class="prevent-select">
       Pokémon Catcher!
     </h1>
     <div class="button-container prevent-select" draggable="false">
-      <button>START</button>
+      <button id="button-play">START</button>
     </div>
     <div class="game-container prevent-select" draggable="false">
       <div class="left-panel prevent-select" draggable="false">

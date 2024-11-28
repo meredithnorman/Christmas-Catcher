@@ -23,7 +23,7 @@
   margin: 2% 0 3%;
 }
 
-button {
+#button-play {
   border-radius: 15px;
   background-color: blue;
   border: 5px solid yellow;
@@ -140,7 +140,7 @@ button:active {
     margin: 3% 0 3%;
   }
 
-  button {
+  #button-play {
     font-size: 0.8rem;
     padding: 0.5rem 1.5rem;
   }
@@ -218,7 +218,7 @@ button:active {
     margin: 2% 0 2%;
   }
 
-  button {
+  #button-play {
     font-size: 1rem;
   }
 
@@ -258,7 +258,7 @@ button:active {
     margin: 4% 0 5%;
   }
 
-  button {
+  #button-play {
     font-size: 1.5rem;
   }
 

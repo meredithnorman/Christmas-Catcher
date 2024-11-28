@@ -139,6 +139,7 @@ function endGame() {
   $("button").off();
   $("button").text("RESET");
   $("button").click(function () {
+    ceaseSound(themeSound);
     ceaseSound(timerSound);
     resetSound.play();
     resetGame();
@@ -177,9 +178,11 @@ function restoreButton() {
   $("button").click(function () {
     ceaseSound(resetSound);
     if (gameOver) {
+      ceaseSound(themeSound);
       startSound.play();
       startGame();
     } else {
+      ceaseSound(themeSound);
       stopSound.play();
       endGame();
     }
@@ -187,3 +190,9 @@ function restoreButton() {
 }
 
 restoreButton();
+
+$("#title").click(function () {
+  if (gameOver) {
+    themeSound.paused ? themeSound.play() : ceaseSound(themeSound);
+  }
+});
