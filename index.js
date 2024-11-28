@@ -1,9 +1,9 @@
 var gameOver = true;
 var score = 0;
 
-var occupiedCells = [];
 const letters = "ABCDE";
 const numbers = "123456";
+var occupiedCells = [];
 
 const timeLimit = 10000;
 var counter = timeLimit;
@@ -19,6 +19,19 @@ const timerSound = new Audio("./sounds/timer.mp3");
 function ceaseSound(sound) {
   sound.pause();
   sound.currentTime = 0;
+}
+
+function animateTimer() {
+  timerSound.play();
+  $("#timer-title, #timer-num")
+    .animate({ color: "red" }, 50)
+    .animate({ color: "yellow" }, 50)
+    .animate({ color: "red" }, 50)
+    .animate({ color: "yellow" }, 50)
+    .animate({ color: "red" }, 50)
+    .animate({ color: "yellow" }, 50)
+    .animate({ color: "red" }, 50)
+    .animate({ color: "yellow" }, 50);
 }
 
 function startTimer() {
@@ -97,16 +110,6 @@ function animatePokeball(cell) {
   });
 }
 
-function incrementScore() {
-  score++;
-  $("#score-num").text(score);
-}
-
-function resetScore() {
-  score = 0;
-  $("#score-num").text(score);
-}
-
 function makeCapturable(cell) {
   $("#" + cell + " img").click(function () {
     $(this).remove();
@@ -126,22 +129,7 @@ function startGame() {
   battleSound.play();
   gameOver = false;
   startTimer();
-  setTimeout(function () {
-    $("button").text("STOP");
-  }, 200);
-}
-
-function animateTimer() {
-  timerSound.play();
-  $("#timer-title, #timer-num")
-    .animate({ color: "red" }, 50)
-    .animate({ color: "yellow" }, 50)
-    .animate({ color: "red" }, 50)
-    .animate({ color: "yellow" }, 50)
-    .animate({ color: "red" }, 50)
-    .animate({ color: "yellow" }, 50)
-    .animate({ color: "red" }, 50)
-    .animate({ color: "yellow" }, 50);
+  $("button").text("STOP");
 }
 
 function endGame() {
@@ -157,6 +145,16 @@ function endGame() {
   });
 }
 
+function incrementScore() {
+  score++;
+  $("#score-num").text(score);
+}
+
+function resetScore() {
+  score = 0;
+  $("#score-num").text(score);
+}
+
 function resetPokemon() {
   occupiedCells = [];
 }
@@ -168,8 +166,8 @@ function resetTime() {
 
 function resetGame() {
   resetPokemon();
-  resetTime();
   resetScore();
+  resetTime();
   restoreButton();
 }
 
@@ -178,8 +176,8 @@ function restoreButton() {
   $("button").text("START");
   $("button").click(function () {
     ceaseSound(resetSound);
-    startSound.play();
     if (gameOver) {
+      startSound.play();
       startGame();
     } else {
       stopSound.play();

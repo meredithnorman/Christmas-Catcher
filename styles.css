@@ -1,14 +1,16 @@
 body {
-  /* display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh; */
   background-image: url("./images/grass.jpg");
-  background-repeat: no-repeat;
   background-attachment: fixed;
+  background-repeat: no-repeat;
   background-size: cover;
-  padding: 0;
   margin: 0;
+  padding: 0;
+}
+
+.prevent-select {
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
 }
 
 #title {
@@ -53,12 +55,6 @@ button:active {
   transform: translateY(4px);
 }
 
-.game-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .left-panel {
   flex: 1;
 }
@@ -69,6 +65,12 @@ button:active {
 
 .right-panel {
   flex: 1;
+}
+
+.game-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .info-row {
@@ -90,14 +92,6 @@ button:active {
 #timer-num {
   font-family: "Roboto", cursive;
   font-size: 6rem;
-  color: yellow;
-  text-shadow: 1px 1px 10px blue;
-}
-
-#explanation {
-  font-family: "Roboto", cursive;
-  font-size: 2rem;
-  padding: 0px 200px 0px;
   color: yellow;
   text-shadow: 1px 1px 10px blue;
 }
@@ -133,4 +127,12 @@ button:active {
 
 .bottom-right {
   border-bottom-right-radius: 30%;
+}
+
+#explanation {
+  font-family: "Roboto", cursive;
+  font-size: 2rem;
+  padding: 0px 200px 0px;
+  color: yellow;
+  text-shadow: 1px 1px 10px blue;
 }
