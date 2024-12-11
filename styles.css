@@ -8,12 +8,12 @@
   display: flex;
   margin-bottom: 0;
   justify-content: center;
-  font-family: "Press Start 2P", cursive;
+  font-family: "Snowburst One", cursive;
   font-size: 4rem;
-  color: yellow;
-  text-shadow: 1px 1px 20px blue;
+  color: red;
+  text-shadow: 1px 1px 20px green;
   -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: blue;
+  -webkit-text-stroke-color: green;
 }
 
 .button-container {
