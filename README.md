@@ -1,4 +1,4 @@
-<h1 style="color: red; text-align: center;">🎄 #Christmas Catcher 🎅</h1>
+<h1 style="color: red; text-align: center;">🎄 Christmas Catcher 🎅</h1>
 
 Try to catch as many Christmas Items in the 10 second time limit! 
 
