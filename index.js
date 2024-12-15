@@ -67,8 +67,23 @@ function selectRandomCell() {
 }
 
 function selectRandomPokemonImage() {
-  const randomPokemonIndex = Math.floor(Math.random() * 150) + 1;
-  return `<img src='https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${randomPokemonIndex}.png' draggable='false' />`;
+  const christmasImages = [
+    "https://github.com/meredithnorman/Christmas-Catcher/blob/main/images/cherries-42904_1280.png",
+    "https://github.com/meredithnorman/Christmas-Catcher/blob/main/images/christmas-160841_1280.png",
+    "https://github.com/meredithnorman/Christmas-Catcher/blob/main/images/christmas-1782151_1280.png",
+    "https://github.com/meredithnorman/Christmas-Catcher/blob/main/images/christmas-tree-1893414_1280.png",
+    "https://github.com/meredithnorman/Christmas-Catcher/blob/main/images/gingerbread-1830137_1280.png",
+    "https://github.com/meredithnorman/Christmas-Catcher/blob/main/images/heart-157895_1280.png",
+    "https://github.com/meredithnorman/Christmas-Catcher/blob/main/images/pudding-31290_1280.png",
+    "https://github.com/meredithnorman/Christmas-Catcher/blob/main/images/santa-claus-153309_1280.png",
+    "https://github.com/meredithnorman/Christmas-Catcher/blob/main/images/snow-160956_1280.png",
+    "https://github.com/meredithnorman/Christmas-Catcher/blob/main/images/sock-4594124_1280.png"
+    
+  ];
+  const randomIndex = Math.floor(Math.random() * christmasImages.length);
+  return `<img src='${christmasImages[randomIndex]}' alt='Christmas Image' draggable='false' />`;
+  //const randomPokemonIndex = Math.floor(Math.random() * 150) + 1;
+  //return `<img src='https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${randomPokemonIndex}.png' draggable='false' />`;
 }
 
 function spawnPokemon() {
