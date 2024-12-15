@@ -68,16 +68,16 @@ function selectRandomCell() {
 
 function selectRandomPokemonImage() {
   const christmasImages = [
-    "https://raw.githubusercontent.com/meredithnorman/Christmas-Catcher/blob/main/images/cherries-42904_1280.png",
-    "https://raw.githubusercontent.com/meredithnorman/Christmas-Catcher/blob/main/images/christmas-160841_1280.png",
-    "https://raw.githubusercontent.com/meredithnorman/Christmas-Catcher/blob/main/images/christmas-1782151_1280.png",
-    "https://raw.githubusercontent.com/meredithnorman/Christmas-Catcher/blob/main/images/christmas-tree-1893414_1280.png",
-    "https://raw.githubusercontent.com/meredithnorman/Christmas-Catcher/blob/main/images/gingerbread-1830137_1280.png",
-    "https://raw.githubusercontent.com/meredithnorman/Christmas-Catcher/blob/main/images/heart-157895_1280.png",
-    "https://raw.githubusercontent.com/meredithnorman/Christmas-Catcher/blob/main/images/pudding-31290_1280.png",
-    "https://raw.githubusercontent.com/meredithnorman/Christmas-Catcher/blob/main/images/santa-claus-153309_1280.png",
-    "https://raw.githubusercontent.com/meredithnorman/Christmas-Catcher/blob/main/images/snow-160956_1280.png",
-    "https://raw.githubusercontent.com/meredithnorman/Christmas-Catcher/blob/main/images/sock-4594124_1280.png"
+    "https://raw.githubusercontent.com/meredithnorman/Christmas-Catcher/main/images/cherries-42904_1280.png",
+    "https://raw.githubusercontent.com/meredithnorman/Christmas-Catcher/main/images/christmas-160841_1280.png",
+    "https://raw.githubusercontent.com/meredithnorman/Christmas-Catcher/main/images/christmas-1782151_1280.png",
+    "https://raw.githubusercontent.com/meredithnorman/Christmas-Catcher/main/images/christmas-tree-1893414_1280.png",
+    "https://raw.githubusercontent.com/meredithnorman/Christmas-Catcher/main/images/gingerbread-1830137_1280.png",
+    "https://raw.githubusercontent.com/meredithnorman/Christmas-Catcher/main/images/heart-157895_1280.png",
+    "https://raw.githubusercontent.com/meredithnorman/Christmas-Catcher/main/images/pudding-31290_1280.png",
+    "https://raw.githubusercontent.com/meredithnorman/Christmas-Catcher/main/images/santa-claus-153309_1280.png",
+    "https://raw.githubusercontent.com/meredithnorman/Christmas-Catcher/main/images/snow-160956_1280.png",
+    "https://raw.githubusercontent.com/meredithnorman/Christmas-Catcher/main/images/sock-4594124_1280.png"
     
   ];
   const randomIndex = Math.floor(Math.random() * christmasImages.length);
