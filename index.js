@@ -83,7 +83,7 @@ function selectRandomPokemonImage() {
   const randomIndex = Math.floor(Math.random() * christmasImages.length);
   return `<img src='${christmasImages[randomIndex]}' alt='Christmas Image' draggable='false' />`;
   //const randomPokemonIndex = Math.floor(Math.random() * 150) + 1;
-  //return `<img src='https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${randomPokemonIndex}.png' draggable='false' />`;
+  //return `<img src='https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${randomPokemonIndex}.png' draggable='false' style='width: 100px; height: 100px;' />`;
 }
 
 function spawnPokemon() {
