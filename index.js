@@ -211,3 +211,5 @@ $("#title").click(function () {
     themeSound.paused ? themeSound.play() : ceaseSound(themeSound);
   }
 });
+
+document.getElementById('grinch-image').style.display = 'block'; // This ensures it's visible
