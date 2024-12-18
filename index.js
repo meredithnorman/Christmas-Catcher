@@ -212,4 +212,4 @@ $("#title").click(function () {
   }
 });
 
-document.getElementById('grinch-image').style.display = 'block'; // This ensures it's visible
+document.getElementById('grinch-image').style.display = 'block'; // This ensures it's visible - i don't think this worked :(
