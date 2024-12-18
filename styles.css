@@ -126,7 +126,7 @@ button:active {
   font-size: 2rem;
   padding: 0px 15% 0px;
   color: black;
-  text-shadow: 1px 1px 10px goldenrod;
+  text-shadow: 1px 1px 10px floralwhite;
   text-align: center;
 }
 
@@ -286,7 +286,7 @@ button:active {
 }
 
 #grinch-image {
-    width: 450px; 
+    width: 150px; 
     height: auto; 
     position: absolute; 
     top: 25%; 
