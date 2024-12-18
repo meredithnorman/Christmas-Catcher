@@ -8,8 +8,8 @@ var occupiedCells = [];
 const timeLimit = 10000;
 var counter = timeLimit;
 
-const themeSound = new Audio("./sounds/theme.mp3");
-const battleSound = new Audio("./sounds/battle.mp3");
+const themeSound = new Audio("./sounds/hmm-well-i-ll-be-grinched.mp3");
+const battleSound = new Audio("./sounds/background_christmas.mp3");
 const pokeballSound = new Audio("./sounds/pokeball.mp3");
 const resetSound = new Audio("./sounds/reset.mp3");
 const startSound = new Audio("./sounds/start.mp3");
