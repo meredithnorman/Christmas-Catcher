@@ -14,7 +14,7 @@ const pokeballSound = new Audio("./sounds/pokeball.mp3");
 const resetSound = new Audio("./sounds/reset.mp3");
 const startSound = new Audio("./sounds/start.mp3");
 const stopSound = new Audio("./sounds/stop.mp3");
-const timerSound = new Audio("./sounds/timer.mp3");
+const timerSound = new Audio("./sounds/hmm-well-i-ll-be-grinched.mp3");
 
 function ceaseSound(sound) {
   sound.pause();
