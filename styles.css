@@ -125,8 +125,8 @@ button:active {
   font-family: "Roboto", cursive;
   font-size: 2rem;
   padding: 0px 15% 0px;
-  color: black;
-  text-shadow: 1px 1px 10px floralwhite;
+  color: floralwhite;
+  text-shadow: 1px 1px 10px goldenrod;
   text-align: center;
 }
 
@@ -286,7 +286,7 @@ button:active {
 }
 
 #grinch-image {
-    width: 150px; 
+    width: 253px; 
     height: auto; 
     position: absolute; 
     top: 25%; 
