@@ -5,7 +5,7 @@ const letters = "ABCDE";
 const numbers = "123456";
 var occupiedCells = [];
 
-const timeLimit = 20000;
+const timeLimit = 10000;
 var counter = timeLimit;
 
 const themeSound = new Audio("./sounds/theme.mp3");
